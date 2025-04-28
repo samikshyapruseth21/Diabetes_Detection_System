@@ -1,0 +1,167 @@
+/* Global styles */
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .prediction-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .prediction-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 14px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background: #0056b3;
+  }
+  
+  .error-message {
+    color: #ff4d4d;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .submitted-data {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .submitted-data h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .data-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .data-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .data-value {
+    color: #333;
+  }
+  
+  .prediction-result {
+    margin-top: 30px;
+    padding: 20px;
+    background: #e9f5ff;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .prediction-result h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .prediction-result p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .diabetic {
+    color: #ff4d4d;
+  }
+  
+  .non-diabetic {
+    color: #28a745;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
